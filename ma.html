@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Test all HTML form and input elements for learn-to-send-email-via-google-script-html-no-server." />
+    <meta name="author" content="dwyl">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>김스쿨</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mail.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <style>
+
+
+    </style>
+
+    <!--[If IE 7]>
+    <script type="text/javascript">
+        alert("Please Upgrade Your BROWSER !");
+    </script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- script -->
+    <script src="js/ie-checker.js"></script>
+</head>
+<body>
+<div id="wrap">
+    <div id="contents">
+        <div id="cont1">
+            <div class="cont1-img"></div>
+            <div class="container">
+                <div class="cont1">
+                    <div class="cbox cbox1">
+                        <h4 class="ir">메인 타이틀</h4>
+                        <p class="ir">decription</p>
+                        <!---->
+                        <div class="mail-form">
+                            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+                                  action="https://script.google.com/macros/s/AKfycbwcwmun-DKeQvBfhb0Fh-EL8hBQRaHQ61q1wPHeSw/exec">
+                                <div class="form-elements">
+                                    <div class="student student_basicInfo">
+                                        <h2><i class="far fa-id-card"></i>2수강생 기본인적사항</h2>
+
+                                        <!--text-field-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_name">성명 </label>
+                                            <input id="student_name" name="성명" placeholder="홍길동" required />
+                                        </fieldset>
+
+
+                                        <!--text-field-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_old">나이 </label>
+                                            <input id="student_old" name="나이" placeholder="예시: 26세 (1992년생)"  required/>
+                                        </fieldset>
+
+                                        <!--menu-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_gender">성별</label>
+                                            <select id="student_gender" name="성별" required>
+                                                <option selected>선택해주세요.</option>
+                                                <option>여성</option>
+                                                <option>남성</option>
+                                            </select>
+                                        </fieldset>
+
+
+                                        <!--menu-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_japaneselevel">일본어 레벨</label>
+                                            <select id="student_japaneselevel" name="일본어 레벨" required>
+                                                <option selected>선택해주세요.</option>
+                                                <option>상</option>
+                                                <option>중</option>
+                                                <option>하</option>
+                                            </select>
+                                        </fieldset>
+
+                                        <!--menu-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_visa">현재 비자 종류</label>
+                                            <select id="student_visa" name="비자" required>
+                                                <option selected>선택해주세요.</option>
+                                                <option>유학비자</option>
+                                                <option>워킹홀리데이</option>
+                                                <option>취업비자</option>
+                                                <option>배우자비자</option>
+                                                <option>고도인재비자</option>
+                                                <option>기타</option>
+                                            </select>
+                                        </fieldset>
+
+
+                                        <!--menu-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_career">IT 경력</label>
+                                            <select id="student_career" name="경력" required>
+                                                <option selected>선택해주세요.</option>
+                                                <option>1년 미만</option>
+                                                <option>1년 이상 ~ 2년 미만</option>
+                                                <option>2년 이상 ~ 3년 미만</option>
+                                                <option>3년 이상 ~ 4년 미만</option>
+                                                <option>4년 이상</option>
+                                            </select>
+                                        </fieldset>
+                                        <!--kakao-->
+                                        <fieldset class="pure-group">
+                                            <label for="student_tel">카카오톡ID </label>
+                                            <input id="student_tel" name="카카오톡" placeholder="카카오톡아이디를입력해주세요."  required/>
+                                        </fieldset>
+
+                                        <fieldset class="pure-group">
+                                            <label for="student_want">WEB수업 선호 시간</label>
+                                            <input id="student_want" name="선호시간" placeholder="(예: 블로그만들기 - 18~19시)"  required/>
+                                        </fieldset>
+
+
+                                    </div>
+
+
+                                    <div class="student student_subjectInfo">
+                                        <!--checkboxes-->
+                                        <fieldset class="pure-group can_language student_subject">
+                                            <h2><i class="fas fa-book"></i>수강신청 과목</h2>
+                                            <div class="subjec_form student_subject--JAVA">
+                                                <h4>JAVA</h4>
+                                                <div>
+                                                    <input id="student_subject--JAVA_beginner" type="checkbox" name="JAVA 수강신청" value="JAVA 기초반">
+                                                    <label for="student_subject--JAVA_beginner">JAVA 기초반</label>
+                                                    <p>(일요일 09:00 ~ 10:30 )</p>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--JAVA_intermediate" type="checkbox" name="JAVA 수강신청" value="JAVA 중급반">
+                                                    <label for="student_subject--JAVA_intermediate">JAVA 중급반</label>
+                                                    <p>(일요일 13:00 ~ 14:30 )</p>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--JAVA_advanced" type="checkbox" name="JAVA 수강신청" value="JAVA 고급반">
+                                                    <label for="student_subject--JAVA_advanced">JAVA 고급반</label>
+                                                    <p>(일요일 15:00 ~ 16:30 )</p>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--JAVA_working" type="checkbox" name="JAVA 수강신청" value="JAVA 속성반">
+                                                    <label for="student_subject--JAVA_working">JAVA 속성반</label>
+                                                    <p>(일요일 17:00 ~ 18:30 )</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="subjec_form student_subject--japanese">
+                                                <h4>일본어</h4>
+                                                <div>
+                                                    <input id="student_subject--japanese" type="checkbox" name="일본어면접 수강신청" value="일본어면접반">
+                                                    <label for="student_subject--japanese">일본어면접반</label>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--none" type="checkbox" name="일본어면접 수강신청" value="신청안함">
+                                                    <label for="student_subject--none">신청안함</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="subjec_form student_subject--HTMLCSS">
+                                                <h4>HTML/CSS</h4>
+                                                <div>
+                                                    <input id="student_subject--WEB_basic" type="checkbox" name="WEB수강신청" value="웹 기초반">
+                                                    <label for="student_subject--WEB_basic">웹 기초반</label>
+                                                    <p>(일요일 11:00 ~ 12:30 )</p>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--HTML_basic" type="checkbox" name="WEB수강신청" value="HTML 기초반">
+                                                    <label for="student_subject--HTML_basic">HTML 기초반</label>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--CSS_basic" type="checkbox" name="WEB수강신청" value="CSS 기초반">
+                                                    <label for="student_subject--CSS_basic">CSS 기초반</label>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--blog" type="checkbox" name="WEB수강신청" value="블로그 만들기 (화목)">
+                                                    <label for="student_subject--blog">블로그 만들기</label>
+                                                    <p>(화/목 17:00 ~ 18:30 )</p>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--homepage" type="checkbox" name="WEB수강신청" value="블로그 만들기 (월수금)">
+                                                    <label for="student_subject--homepage">블로그 만들기</label>
+                                                    <p>(월/수/금 19:00 ~ 20:30 )</p>
+                                                </div>
+                                                <div>
+                                                    <input id="student_subject--homepage2" type="checkbox" name="WEB수강신청" value="반응형 홈페이지만들기">
+                                                    <label for="student_subject--homepage2">반응형 홈페이지만들기</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+
+                                    <!--submit/button-->
+                                    <button class="button-success pure-button button-xlarge">
+                                        <i class="fa fa-paper-plane"></i>&nbsp;Send
+                                    </button>
+                                </div>
+
+                                <div class="thankyou_message" style="display:none;">
+                                    <h2>감사합니다. 빠른시일 내에 연락드리겠습니다.</h2>
+                                    <a href="javascript:window.close()"><i class="fas fa-home"></i></a>
+                                </div>
+
+                            </form>
+                        </div>
+                        <!--//-->
+                    </div>
+                    <!--//cbox cbox1-->
+                </div>
+                <!--//cont1-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//cont1-->
+    </div>
+    <!--//contents-->
+</div>
+<!--//wrap-->
+<script data-cfasync="false" src="js/form-submission-handler.js"></script>
+</body>
+</html>

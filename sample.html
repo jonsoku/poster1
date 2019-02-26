@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>김스쿨 게시판ㅌ 폼</title>
+	
+	<!-- style -->
+	<link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sample.css">
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!--[If IE 7]>
+	    <script type="text/javascript">
+	        alert("Please Upgrade Your BROWSER !");
+	    </script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+	    <script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<!-- script -->
+	<script src="../js/ie-checker.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="container">
+				<div class="header"><!--편의상( 나중에 css작업할때 편함 )-->
+					<h1 class="logo">
+						<a href="#"></a>
+					</h1>
+					<div id="top-menu" class="top-menu">
+						<ul>
+							<li><a href="">문의사항</a></li>
+							<li><a href="">오시는길</a></li>
+							<li><a href="">日本語</a></li>
+						</ul>
+					</div>
+					<nav id="gnb" class="gnb">
+						<ul>
+							<li><a href="#">학원소개</a></li>
+							<li><a href="#">수강신청</a></li>
+							<li><a href="#">질문답변</a></li>
+							<li><a href="#">강의영상</a></li>
+							<li><a href="#">출석체크</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div><!--//header-->
+		<div id="contents">
+			<div class="contents">
+				<div class="board_tit">
+					<div class="container">
+						<p class="tit_tit"><span>N</span>otice</p>
+						<p class="tit_subtit">김스쿨 공지사항입니다.</p>
+					</div>
+				</div>
+				<div class="container">
+					<div class="board_wrap">
+						<div class="board_seachbox">
+							<div class="bseachbox seachbox_subject1"><a href="#">JAVA</a></div>
+							<div class="bseachbox seachbox_subject2"><a href="#">WEB</a></div>
+							<div class="bseachbox seachbox_subject3"><a href="#">PHP</a></div>
+							<div class="bseachbox seachbox_subject4">
+								<select name="bseachbox" size="1" >
+									<option value="">전체</option>
+									<option value="jb">제목</option>
+									<option value="jm">내용</option>
+									<option value="ja">글쓴이</option>
+								</select>
+							</div>
+							<div class="bseachbox seachbox_subject5">
+								<input type="text">
+							</div>
+							<div class="bseachbox seachbox_subject6"><a href="#">검색</a></div>
+						</div>
+						<div class="board">
+							<table>
+								<table>
+									<thead>
+									  <th class="board_box box_no">NO</th>
+									  <th class="board_box box_subject">과목</th>
+									  <th class="board_box box_tit">제목</th>
+									  <th class="board_box box_date">날짜</th>
+									  <th class="board_box box_author">글쓴이</th>
+									  <th class="board_box box_view">조회수</th>
+									</thead>
+									<tr>
+									  <td class="board_box board_box2 box_no">2</td>
+									  <td class="board_box board_box2 box_subject">JAVA</td>
+									  <td class="board_box board_box2 box_tit">JAVA 고급반 공지사항입니다.</td>
+									  <td class="board_box board_box2 box_date">2019. 1. 1</td>
+									  <td class="board_box board_box2 box_author">이종석</td>
+									  <td class="board_box board_box2 box_view">2</td>
+									</tr>
+									<tr>
+									  <td class="board_box board_box2 box_no">1</td>
+									  <td class="board_box board_box2 box_subject">PHP</td>
+									  <td class="board_box board_box2 box_tit">PHP 기초 공지사항입니다.</td>
+									  <td class="board_box board_box2 box_date">2019. 1. 1</td>
+									  <td class="board_box board_box2 box_author">이종석</td>
+									  <td class="board_box board_box2 box_view">2</td>
+									</tr>
+								  </table>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--contents-->
+        <div id="footer">
+			<div id="footer_notice">
+				<div class="container">
+					footer_notice
+				</div>
+			</div>
+			<div id="footer_info">
+				<div class="container">
+					footer_info
+				</div>
+			</div>
+		</div><!--footer-->
+		
+	</div>
+
+</body>
+</html>

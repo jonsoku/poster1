@@ -1,0 +1,44 @@
+{
+    "name": "My Server",
+    "host": "13.115.40.196",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "root",
+    "remotePath": "/var/www/html/kimschool",
+    "uploadOnSave": true,
+    "privateKeyPath": "C:\\Users\\localhost\\Desktop\\testserver.pem"
+}
+
+{
+    "name": "My Server",
+    "host": "13.115.40.196",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "root",
+    "remotePath": "/var/www/html/kimschool",
+    "uploadOnSave": true,
+    "privateKeyPath": "/Users/jongseoklee/Documents/key/testserver.pem"
+}
+
+
+{
+    "name": "My Server",
+    "host": "kimschool.dothome.co.kr",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "kimschool",
+    "password": "rlatmznf1",
+    "remotePath": "/host/home4/kimschool",
+    "uploadOnSave": true
+}
+
+{
+    "name": "My Server",
+    "host": "13.115.40.196",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "root",
+    "remotePath": "/var/www/html/kimschool",
+    "uploadOnSave": true,
+    "privateKeyPath": "C:\\Users\\localhost\\Desktop\\내 폴더\\서버 키\\testserver.pem"
+}

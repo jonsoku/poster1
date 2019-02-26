@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>김스쿨 회원가입 폼2</title>
+	
+	<!-- style -->
+	<link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/joinform.css">
+    <link rel="stylesheet" href="../css/joinform2.css">
+	<link rel="stylesheet" href="../css/font.css">
+	<link rel="stylesheet" href="../css/font-awesome.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<!--[If IE 7]>
+	    <script type="text/javascript">
+	        alert("Please Upgrade Your BROWSER !");
+	    </script>
+	<![endif]-->
+
+	<!--[if lt IE 9]>
+	    <script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<!-- script -->
+	<script src="../js/ie-checker.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<div class="container">
+				<div class="header"><!--편의상( 나중에 css작업할때 편함 )-->
+					<h1>LOGO</h1>
+				</div>
+			</div>
+		</div><!--//header-->
+		
+		<div id="contents">
+			<div id="cont1">
+				<div class="container">
+                    <div class="cont1">
+                        <div id="joinform_dot">
+                            <div class="joinform_dots"></div>
+                            <div class="joinform_dots"></div>
+                            <div class="joinform_dots"></div>
+                            <h1>가입정보 입력</h1>
+                            <p>로그인 정보 및 가입 정보를 입력하세요.</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+			<div id="cont2">
+				<div class="container">
+					<div class="cont2">
+                        <div class="joinform_jbox1">
+							<div class="wrap_info">
+								<div class="jbox1_info">
+									<h3>아이디</h3>
+									<input type="text" id="memberId" name="memberId" class="info_input" placeholder="아이디를 입력해주세요.">
+									<span id="idCheckResult" class="info_check"></span>
+								</div>
+								<div class="jbox1_info info_password">
+									<h3>비밀번호</h3>
+									<input type="password" id="password" name="password" class="info_input"  placeholder="패스워드를 입력해주세요."/>
+									<span id="pwCheckResult1"  class="info_check" ></span>
+									<br>
+									<h3>비밀번호 재확인</h3>
+									<input type="password" id="password2" class="info_input"  placeholder="패스워드를 다시한번 입력해주세요."/>
+									<span id="pwCheckResult2"  class="info_check"></span>
+								</div>
+								<div class="jbox1_info info_userInfo">
+									<h3>이름</h3>
+									<input type="text" id="fullName" name="fullName"  class="info_input" placeholder="이름을 입력해주세요."/>
+									<span id="name2CheckResult" class="info_check"></span>
+									<br>									
+									<h3>닉네임</h3>
+									<input type="text" id="name" name="name" class="info_input" placeholder="닉네임을 입력해주세요.">
+									<span id="nameCheckResult"  class="info_check"></span>
+									<div class="userInfo_email">
+										<h3>E-mail</h3>
+										<input type="text" id="email" name="email" class="info_input" placeholder="이메일주소를 입력해주세요."></input>
+										<button type="button" id="joinSendMail" class="emailBtn" >전송</button>
+										<span id="emailSendResult" class="info_check"></span>
+										<br>
+										<h3>인증번호</h3>
+										<input type="text" id="code" name="code" class="info_input" placeholder="인증번호를 입력해주세요."></input>
+										<span id="emailCheckResult" class="info_check"></span>
+									</div>
+									<h3>전화번호</h3>
+									<input type="text" id="phone" name="phone" class="info_input" placeholder="전화번호를 입력해주세요.">
+								</div>
+							</div>
+						</div>
+                    </div>
+				</div>
+			</div>
+			<div id="cont3">
+				<div class="container">
+					<div class="cont3">
+                        <div class="joinform_jbox3">
+                            <div class="jbox3_formBtn formBtn_prev"><a href="joinform.html">이전으로</a></div>
+                            <div class="jbox3_formBtn formBtn_next"><a href="joinform2.html">가입하기</div>
+                        </div>
+                    </div>
+				</div>
+            </div>
+		</div><!--contents-->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer">
+					   <!--ul>li*7>a[href="#"]-->
+					   <ul>
+						   <li><a href="#">사이트 도움말</a></li>
+						   <li><a href="#">사이트 이용약관</a></li>
+						   <li><a href="#">사이트 운영원칙</a></li>
+						   <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+						   <li><a href="#">책임의 한계와 법적고지</a></li>
+						   <li><a href="#">게시중단 요청서비스</a></li>
+						   <li><a href="#">고객센터</a></li>
+					   </ul>
+					   <address>
+							<em>Copyright &copy;
+							<a href="#"><strong>KIMSCHOOL</strong></a>
+							All rights reserved.</em>
+					   </address>
+					</div>
+					<!--//.footer-->
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
